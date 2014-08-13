@@ -1,7 +1,7 @@
 Instantiating
 =============
 
-New repository on GitHub
+Web Standards Project
 
 Angelena Ward
 August 12, 2014
