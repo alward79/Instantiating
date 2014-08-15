@@ -1,0 +1,23 @@
+/* #Basic Styles
+================================================== */
+body{
+	padding: 90px;
+	background-color: #6d056d;
+	color: #333;
+}
+
+
+/* #Footer
+================================================== */
+footer{
+    background: #9d9da0;
+    width: 100%;
+    margin-top: 1px;
+    border-radius: 1px;
+	text-align: center;
+	color: black;
+	box-shadow: 2px 2px 2px #2f4f4f;
+}
+footer a, footer a:visited { 
+	color: #5a2f69;
+}
