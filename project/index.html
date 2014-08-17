@@ -18,12 +18,29 @@
 			<div class="collapse navbar-collapse" id="collapse">
 				<ol class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="search.html">Search</a></li>
-	   				<li><a href="results.html">Search Results</a></li>
+	   				<li><a href="search.html">Search</a></li>
 	    			<li><a href="favorites.html">Favorites</a></li>
-				    <li><a href="signup.html">Sign Up</a></li>
-	    			<li><a href="login.html">Log in</a></li>
 				</ol>
+				<div class="col-sm-3 col-md-3">
+					<form id-"search-form" class="navbar-form navbar-left" method="GET" action="results.html" role="search">
+					    <div class="input-group">
+					        <input type="text" class="form-control" placeholder="Search">
+					        <div class="input-group-btn">
+	    						<button type="submit" class="btn btn-default">
+	    							<i class="glyphicon glyphicon-search"></i>
+	    						</button>
+	    					</div>
+	    				</div>		
+					</form>
+				</div>	
+				<ul class="nav navbar-nav navbar-right">
+					<li id="nav-register-btn" class="">
+						<a href="signup.html">Register</a>
+					</li>
+					<li id="nav-login-btn" class="">
+						<a href="login.html">Login</a>
+					</li>
+				</ul>
 			</div>	    
 		</nav>	
 	</header>
@@ -31,11 +48,24 @@
 	<!-- CTA 
  	================================================== -->
 	<div class="jumbotron">
-    	<img src="img/digital-cameras.jpg" alt="" class="pull-right img-responsive">
-        <h1>Which is Right?</h1>
-        <h3>The Smarter Way to Buy</h3>
+    	<img id="jumbo" src="img/digital-cameras.jpg" alt="" class="pull-right img-responsive">
+        <h1 id="head1">Which is Right?</h1>
+        <h3 id="head3">The Smarter Way to Buy</h3>
         <p>Whether you want to know to about a simple camera you can slip into a pocket, one with interchangeable lenses and plenty of controls, or something in between, we have it all. </p>
     </div>
+
+     <div class="row">
+         <aside class="col-lg-3 col-sm-4">
+        	<h3 id="head3">What's Right for You</h3>
+            <p>Buying a digital camera can be disorienting. There are hundreds of cameras available at many different types of retail outlets (online and in traditional stores), with prices ranging from $75 to several thousand dollars. Some cameras are small enough to fit in a shirt pocket. Others are large and can weigh up to two pounds. Some are easy to use. Others look like you need an engineering degree to operate them. And almost all are advertised with abbreviations that can be cryptic and confusing for the novice.</p>
+            <p>In this digital camera guide, we aim to help you overcome some of this confusion and choose what's best for you and your budget.</p>
+         </aside>
+         <article class="col-lg-8 col-lg-offset-1 col-sm-7 col-sm-offset-1">
+            <h1 id="head1">Where to Start.</h1>
+            <p><img id="cameraguy"src="img/camera-guy.jpg" class="pull-right">Our Ratings are divided into two main categories: Basic cameras, which are simple point-and-shoots with just the features needed for routine shots, and advanced cameras, which are feature-laden cameras that include sophisticated point-and-shoot and models that let you change lenses. Note that all point-and-shoots, whether basic or advanced, include cameras with lenses built into the camera (that is, non-removable).</p>
+            <p>After you consider the type of camera you want and the number of megapixels you need, but before you dive into specific models, be sure to check out our brand profiles, which outline many of the most popular camera product lines and their respective character traits. Next, look to our Ratings and Recommendations (available to subscribers) for the models that have the best performance and image quality, including scores for how models capture regular and flash photos. If you're interested in how well a camera captures video, consider the video quality score. And to see which models respond the quickest, consider the ease of use score, which is an overall speed judgment, including start-up time and the shutter delay for the first and later shots. </p>
+            <p>For many, price is a major factor when buying a camera. In general, look to pay the following for the type of camera you're looking to buy: For basic point-and-shoots (subcompacts, compacts, rugged & waterproof models, and superzooms), expect to spend $75 to $500. For advanced point-and-shoots, expect to spend $350 to $1,100. For SLR-likes, expect to spend $450 to $1,200. For SLRs, expect to spend $500 to $2,000. Many respondents in our surveys found online shopping to be a more satisfying shopping experience than walk-in-store shopping. Most walk-in retailers offer either low prices or wide selection. But some online retailers offer both. But be cautious of very low prices and verify that the camera isn't refurbished or gray market.</p>
+        </article>
 
 	<!-- Footer
 	================================================== -->
