@@ -60,7 +60,16 @@ p{
 #cameraguy{
 	padding: 0px 10px 0px 10px;
 }
-
+.gallery img, .gallery figcaption {
+	width: 90%;
+	font-size: 70%;
+}
+.gallery img {
+	padding-top: 5px;
+}
+.gallery figcaption { 
+	padding-bottom: 5px;
+}
 /* #Forms
 ================================================== */
 #form {
