@@ -53,6 +53,17 @@ p{
 	color: #069;
 }
 
+.navbar-brand{
+	font-family: 'Aguafina Script', cursive;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px #069;
+}
+.navbar-brand strong{
+	font-family: helvetica, arial, sans-serif;
+	letter-spacing: 0px;
+	text-shadow: 2px 2px #069;
+}
+
 /* #Images
 ================================================== */
 #old { 
