@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search page to narrow search">
+    <meta name="author" content="Angelena Ward">
     <title>Search Results</title>
 
     <!-- CSS
@@ -9,22 +12,29 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
 </head>
-<body>
+<body id="search-page">
 
 	<!-- NAVIGATION 
  	================================================== -->
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="glyphicon glyphicon-arrow-down"></span>
+					  	MENU
+					</button>
+				</div>
 			<div class="collapse navbar-collapse" id="collapse">
 				<ol class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-	   				<li><a href="search.html">Search</a></li>
-	    			<li><a href="favorites.html">Favorites</a></li>
+					<li><a href="index.html" id="homenav">Home</a></li>
+	   				<li><a href="search.html" id="searchnav">Search</a></li>
+	    			<li><a href="favorites.html" id="favnav">Favorites</a></li>
 				</ol>
 				<div class="col-sm-3 col-md-3">
 					<form id-"search-form" class="navbar-form navbar-left" method="GET" action="results.html" role="search">
 					    <div class="input-group">
-					        <input type="text" class="form-control" placeholder="Search">
+					        <input type="text" class="form-control" placeholder=" Search">
 					        <div class="input-group-btn">
 	    						<button type="submit" class="btn btn-default">
 	    							<i class="glyphicon glyphicon-search"></i>
@@ -35,25 +45,65 @@
 				</div>	
 				<ul class="nav navbar-nav navbar-right">
 					<li id="nav-register-btn" class="">
-						<a href="signup.html">Register</a>
+						<a href="signup.html" id="signupnav">Register</a>
 					</li>
 					<li id="nav-login-btn" class="">
-						<a href="login.html">Login</a>
+						<a href="login.html" id="loginnav">Login</a>
 					</li>
 				</ul>
 			</div>	    
 		</nav>	
 	</header>
+
+	<!-- Search 
+ 	================================================== -->
 	<h2 id="head2">Enter your search</h2>
 
 	<form class="form-inline" role="search" method="GET" action="results.html">
 		<div class="form-group col-lg-4">
-			<input class="form-control " type="text" placeholder="Search" name="q">
+			<input class="form-control " type="text" placeholder=" Search" name="q">
 		</div>
 		<button class="btn btn-default" type="submit">
 			<span class="glyphicon glyphicon-search"> Search</span>
 		</button>
+
 	</form>
+	<p>
+		<h4 id="head4">Narrow Results</h4>
+	   	<label>Select Manufacture</label>
+	   	<select id = "continent">
+		    <option value = "1">Canon</option>
+		   	<option value = "2">Nikon</option>
+		    <option value = "3">Olympus</option>
+		    <option value = "4">Sony</option>
+		    <option value = "5">Fujifilm</option>
+		    <option value = "6">Pentax</option>
+		    <option value = "7">Kodak</option>
+		    <option value = "7">Mamiya</option>
+		</select>
+  
+       	<label>Select Type</label>
+       	<select id = "meal">
+	        <option value = "1">Point and Shoot</option>
+	        <option value = "2">DSLR</option>
+	   		<option value = "3">Micro Four Thirds</option>
+       	</select>
+                     
+      	<label>Select Price Range</label>
+       	<select id = "meal">
+	        <option value = "1">$0 - $249.99</option>
+	        <option value = "2">$250 - $499.99</option>
+	        <option value = "3">$500 - $749.99</option>
+	        <option value = "4">$750 - $999.99</option>
+	        <option value = "5">$1000 - $1499.99</option>
+	        <option value = "5">$1500 - $1999.99</option>
+	        <option value = "5">$2000 - $2999.99</option>
+	        <option value = "5">$3000 - $3999.99</option>
+	        <option value = "5">$4000 - $4999.99</option>
+	        <option value = "6">$5000 - $9999.99</option>
+	        <option value = "5">$10000 + </option>
+       	</select>
+   	</p>
 
 	<!-- Footer
 	================================================== -->
@@ -63,6 +113,7 @@
 
 	<!-- Javascript
 	================================================== -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

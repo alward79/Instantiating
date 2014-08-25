@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Page that display search result">
+    <meta name="author" content="Angelena Ward">
     <title>Result Detail</title>
 
     <!-- CSS
@@ -15,6 +18,13 @@
  	================================================== -->
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="glyphicon glyphicon-arrow-down"></span>
+					  	MENU
+					</button>
+				</div>
 			<div class="collapse navbar-collapse" id="collapse">
 				<ol class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
@@ -24,7 +34,7 @@
 				<div class="col-sm-3 col-md-3">
 					<form id-"search-form" class="navbar-form navbar-left" method="GET" action="results.html" role="search">
 					    <div class="input-group">
-					        <input type="text" class="form-control" placeholder="Search">
+					        <input type="text" class="form-control" placeholder=" Search">
 					        <div class="input-group-btn">
 	    						<button type="submit" class="btn btn-default">
 	    							<i class="glyphicon glyphicon-search"></i>
@@ -35,10 +45,10 @@
 				</div>	
 				<ul class="nav navbar-nav navbar-right">
 					<li id="nav-register-btn" class="">
-						<a href="signup.html">Register</a>
+						<a href="signup.html" id="signupnav">Register</a>
 					</li>
 					<li id="nav-login-btn" class="">
-						<a href="login.html">Login</a>
+						<a href="login.html" id="loginnav">Login</a>
 					</li>
 				</ul>
 			</div>	    
@@ -47,11 +57,49 @@
 
 	<!-- Finding search info 
  	================================================== -->
-	<div class="container" style="margin-bottom:20px; margin-top:20px;">
-		<div class="row">
-			<h2 id="head2">Your search results <span class="product"></span></h2>
-		</div>
-	</div>	
+	<section>
+		<div class="container" style="margin-bottom:20px; margin-top:20px;">
+			<div class="row">
+				<h2 id="head2">Your search results <span class="product"></span></h2>
+			</div>
+		</div>	
+        <div><img id="canon" src="img/Canon_EOS_7D.jpg" alt="canon" title="canon" class="pull-right img-responsive" /></div>
+        <h3>Description</h3>
+        <div>
+       	  <p>Canon EOS 7D with Canon EF-S 18-135mm lens.</p>
+        </div>
+        <h3>Key Features</h3>
+        <div>
+        	 <ul>
+  				<li>18MP Megapixels</li>
+  				<li>8 frames per second continuous shooting</li>
+              	<li>1080p HD video recording with manual controls</li>
+              	<li>3.0 inch Clear View II LCD screen</li>
+              	<li>19-point AF system (all cross-type)</li>
+             	<li>1.0x magnification and 100% coverage viewfinder</li>
+             	<li>Self cleaning sensor</li>
+             	<li>High sensitivity (ISO 12800)</li>
+             	<li>Wireless flash control</li>
+              	<li>Accepts EF and EF-S mount lenses</li>
+              	<li>Environmental sealing</li>
+			</ul>
+		</div>		
+		<h4>Customer Reviews</h4>
+		<h5>7D is a great camera</h5>
+		<p>7D is a great camera.I was hestitant to purchase this due to negative reviews on internet regarding focus issues. When I received the camera, I tested the focus first out of the box. Yes it was soft....</p>
+		<a href="#">
+			<p>Read complete review</p>
+		</a>
+		<h5>EOS 7D User Review and Comparisons</h5>
+		<p>My wife raved for weeks about pictures she was viewing on Facebook that were posted by a number of photographers in Florida. She kept saying, and they shot these with a 7D and a....</p>
+		<a href="#">
+			<p>Read complete review</p>
+		</a>
+		<h4>Reviewed by 2111 customers
+			<a href="#">See all reviews</a>
+		</h4>	
+	</section>
+
 
 	<!-- Footer
 	================================================== -->
@@ -61,6 +109,7 @@
 
 	<!-- Javascript
 	================================================== -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>	
    	<script src="js/bootstrap.min.js"></script> 
 </body>
 </html>
